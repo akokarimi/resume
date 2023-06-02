@@ -7,3 +7,40 @@
     font-family: "Geologica", sans-serif;
   }
 }
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+  color: #00296b;
+}
+
+.icon-scroll {
+  width: 30px;
+  height: 50px;
+  box-shadow: inset 0 0 0 1px #00296b;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-left: -2.5px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  background-color: #00296b;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}

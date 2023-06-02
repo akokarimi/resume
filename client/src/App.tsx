@@ -3,7 +3,7 @@ import Hero from "./components/hero/Hero";
 
 function App() {
   return (
-    <div className="main w-scren">
+    <div className="main w-full relative">
       <Hero />
       <br />
       <br />
