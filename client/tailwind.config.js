@@ -5,11 +5,13 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
-        sm: "2rem",
-        lg: "4rem",
+        DEFAULT: "2rem",
+        sm: "4rem",
+        md: "3rem",
+        lg: "3rem",
         xl: "5rem",
-        "2xl": "6rem",
+        "2xl": "8rem",
+        "3xl": "10rem",
       },
     },
     extend: {
@@ -23,4 +25,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: "class",
 };

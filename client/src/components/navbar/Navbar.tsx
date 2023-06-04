@@ -33,30 +33,35 @@ const Navbar = () => {
   }
 
   return (
-    <div>
-      <ul
-        onPointerMove={mouseEnter}
-        onPointerLeave={mouseLeave}
-        className="relative flex gap-0"
-      >
-        <div
-          className="w-0px h-0.5 bg-gray-400 absolute left-0 -bottom-1 transition-all duration-300 "
-          ref={underline}
-        ></div>
-        <li className="navigationItem px-4 text-textColor" ref={menuZeroItem}>
-          <a href="#Home">Home</a>
-        </li>
-        <li className="navigationItem px-4 text-textColor">
-          <a href="#Home">Skills</a>
-        </li>
-        <li className="navigationItem px-4 text-textColor">
-          <a href="#Home">Projects</a>
-        </li>
-        <li className="navigationItem px-4 text-textColor">
-          <a href="#Home">Contact</a>
-        </li>
-      </ul>
-    </div>
+    <>
+      <div className="hidden md:block">
+        <ul
+          onPointerMove={mouseEnter}
+          onPointerLeave={mouseLeave}
+          className="relative flex gap-0"
+        >
+          <div
+            className="w-0px h-0.5 bg-gray-400 absolute left-0 -bottom-1 transition-all duration-300 "
+            ref={underline}
+          ></div>
+          <li className="navigationItem px-4 text-textColor" ref={menuZeroItem}>
+            <a href="#Home">Home</a>
+          </li>
+          <li className="navigationItem px-4 text-textColor">
+            <a href="#Home">About</a>
+          </li>
+          <li className="navigationItem px-4 text-textColor">
+            <a href="#Home">Skills</a>
+          </li>
+          <li className="navigationItem px-4 text-textColor">
+            <a href="#Home">Projects</a>
+          </li>
+          <li className="navigationItem px-4 text-textColor">
+            <a href="#Home">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </>
   );
 };
 
