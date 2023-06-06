@@ -5,27 +5,30 @@ import Contacts from "./Contacts";
 const Hero = () => {
   return (
     <>
-      <section
-        className="bg-gradient-to-b md:bg-gradient-to-r from-primaryLight via-white to-secondaryLight
-      h-screen relative"
-      >
+      <section className="bg-light1 h-screen">
         <Header />
-        <Contacts />
-        <div className="flex flex-col-reverse md:flex-row justify-between items-center container mx-auto pt-8 gap-2 ">
-          <div className="text-center md:text-left md:w-1/2 flex flex-col gap-8">
-            <p className="text-3xl md:text-4xl lg:text-5xl text-textColor font-bold">
+
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center container mx-auto pt-8 gap-2">
+          <div className="text-center md:text-left md:w-1/2 flex items-center md:items-start flex-col gap-8">
+            <p className="text-3xl md:text-4xl lg:text-5xl text-dark1 font-bold">
               Hi, I'm Ako Karimi
             </p>
-            <p className="text-md md:text-2xl text-textColor">
+            <p className="text-md md:text-2xl text-dark2">
               I'm an Enthusiastic Full Stack Web Developer, Based in Sanandaj,
               Iran.
             </p>
+            <a
+              href="#contact"
+              className="text-dark1 bg-white border-2 border-primary w-36 md:w-40 py-2 px-6 md:px-8 text-center shadow-md rounded-3xl hover:bg-primary hover:text-white hover:border-primary transition duration-500 "
+            >
+              Contact me
+            </a>
           </div>
 
           <div className="w-4/5 md:w-1/2 flex justify-center">
             <img
               className="mt-6 md:mt-auto object-scale-down"
-              src="/img/7.png"
+              src="/img/1.png"
               alt="Ako Karimi"
             />
           </div>

@@ -12,11 +12,11 @@
 .icon-scroll:before {
   position: absolute;
   left: 50%;
-  color: #00296b;
+  color: #292929;
 }
 
 .icon-scroll {
-  box-shadow: inset 0 0 0 1px #00296b;
+  box-shadow: inset 0 0 0 1px #292929;
   border-radius: 25px;
 }
 
@@ -30,7 +30,7 @@
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-name: scroll;
-  background-color: #00296b;
+  background-color: #292929;
 }
 
 @keyframes scroll {

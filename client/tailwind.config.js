@@ -16,11 +16,19 @@ module.exports = {
     },
     extend: {
       colors: {
-        textColor: "#00296b",
-        primary: "#c1fffa",
-        secondary: "#ffcef4",
-        primaryLight: "rgba(193,255,250,0.4)",
-        secondaryLight: "rgba(255,206,244,0.4)",
+        primary: "#0095eb",
+        light1: "#f7f7f7",
+        light2: "#eeeeee",
+        dark1: "#474747",
+        dark2: "#707070",
+      },
+      keyframes: {
+        fill: {
+          from: { width: "0%" },
+        },
+        fill2: {
+          from: { height: "0%" },
+        },
       },
     },
   },
