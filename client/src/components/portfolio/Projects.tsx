@@ -50,9 +50,14 @@ function Projects() {
                 </p>
               </div>
             </div>
-            <div className="my-8 text-dark1 dark:text-light1 border-2 border-primary w-36 md:w-40 py-2 px-6 md:px-8 text-center shadow-md rounded-3xl hover:bg-primary hover:text-white hover:border-primary transition duration-500">
+            <a
+              href="https://github.com/akokarimi/digikala-react"
+              target="_blank"
+              rel="noreferrer"
+              className="my-8 text-dark1 dark:text-light1 border-2 border-primary w-36 md:w-40 py-2 px-6 md:px-8 text-center shadow-md rounded-3xl hover:bg-primary hover:text-white hover:border-primary transition duration-500"
+            >
               More info
-            </div>
+            </a>
           </div>
           <div
             ref={ref2}
@@ -93,9 +98,14 @@ function Projects() {
                 </p>
               </div>
             </div>
-            <div className="my-8 text-dark1 dark:text-light1 border-2 border-primary w-36 md:w-40 py-2 px-6 md:px-8 text-center shadow-md rounded-3xl hover:bg-primary hover:text-white hover:border-primary transition duration-500 pointer">
+            <a
+              href="https://weather-app-ako.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="my-8 text-dark1 dark:text-light1 border-2 border-primary w-36 md:w-40 py-2 px-6 md:px-8 text-center shadow-md rounded-3xl hover:bg-primary hover:text-white hover:border-primary transition duration-500 pointer"
+            >
               More info
-            </div>
+            </a>
           </div>
         </div>
       </div>
