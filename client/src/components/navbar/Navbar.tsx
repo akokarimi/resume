@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Dark from "../utils/Dark";
 
 const Navbar = () => {
   const underline = useRef<HTMLDivElement>(null);
@@ -34,32 +35,33 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden md:block">
+      <div className="md:flex md:gap-1 md:items-center">
         <ul
           onPointerMove={mouseEnter}
           onPointerLeave={mouseLeave}
-          className="relative flex gap-0"
+          className="hidden md:relative md:flex md:gap-0 text-dark1 dark:text-light1"
         >
           <div
             className="w-0px h-0.5 bg-primary absolute left-0 -bottom-1 transition-all duration-300 "
             ref={underline}
           ></div>
-          <li className="navigationItem px-4 text-dark1" ref={menuZeroItem}>
+          <li className="navigationItem px-4 " ref={menuZeroItem}>
             <a href="#Home">Home</a>
           </li>
-          <li className="navigationItem px-4 text-dark1">
+          <li className="navigationItem px-4">
             <a href="#Home">About</a>
           </li>
-          <li className="navigationItem px-4 text-dark1">
+          <li className="navigationItem px-4">
             <a href="#Home">Skills</a>
           </li>
-          <li className="navigationItem px-4 text-dark1">
+          <li className="navigationItem px-4">
             <a href="#Home">Projects</a>
           </li>
-          <li className="navigationItem px-4 text-dark1">
+          <li className="navigationItem px-4">
             <a href="#Home">Contact</a>
           </li>
         </ul>
+        <Dark />
       </div>
     </>
   );
