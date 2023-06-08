@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <section className="bg-light1 dark:bg-dark">
+    <section id="contactme" className="bg-light1 dark:bg-dark">
       <div className="container mx-auto pt-20 pb-16 md:pt-24 md:pb-14 gap-2 ">
         <p className="text-xl md:text-4xl lg:text-5xl text-dark1 dark:text-light1 font-bold pb-12">
           Contact Me
@@ -17,7 +17,7 @@ const ContactMe = () => {
           <p className="text-dark2 dark:text-light2">+989189981472</p>
           <p className="font-bold flex gap-1 items-center">
             <svg className="w-6 h-4 md:w-6 fill-primary">
-              <use xlinkHref="img/svg-icons.svg#icon-home"></use>
+              <use xlinkHref="img/svg-icons.svg#icon-mail2"></use>
             </svg>
             Email:
           </p>
@@ -43,6 +43,13 @@ const ContactMe = () => {
             Twitter:
           </p>
           <p className="text-dark2 dark:text-light2">ako_mountaintop</p>
+          <p className="font-bold flex gap-1 items-center">
+            <svg className="w-6 h-4 md:w-6 fill-primary">
+              <use xlinkHref="img/svg-icons.svg#github"></use>
+            </svg>
+            Github:
+          </p>
+          <p className="text-dark2 dark:text-light2">github.com/akokarimi</p>
         </div>
       </div>
     </section>

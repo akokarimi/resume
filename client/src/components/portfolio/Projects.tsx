@@ -4,11 +4,11 @@ function Projects() {
   const [ref1, inView1] = useInView();
   const [ref2, inView2] = useInView();
   return (
-    <section className="bg-light2 dark:bg-dark1 overflow-x-hidden">
-      <div
-        id="projects"
-        className="container mx-auto pt-20 pb-16 md:pt-24 md:pb-14 gap-2"
-      >
+    <section
+      id="projects"
+      className="bg-light2 dark:bg-dark1 overflow-x-hidden"
+    >
+      <div className="container mx-auto pt-20 pb-16 md:pt-24 md:pb-14 gap-2">
         <p className="text-xl md:text-4xl lg:text-5xl text-dark1 dark:text-light1 font-bold pb-12">
           My Projects...
         </p>

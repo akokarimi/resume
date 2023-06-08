@@ -48,16 +48,44 @@ const Navbar = () => {
           <li className="navigationItem px-4 " ref={menuZeroItem}>
             <a href="#Home">Home</a>
           </li>
-          <li className="navigationItem px-4">
+          <li
+            onClick={() => {
+              document
+                .getElementById("about")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="navigationItem px-4"
+          >
             <a href="#Home">About</a>
           </li>
-          <li className="navigationItem px-4">
+          <li
+            onClick={() => {
+              document
+                .getElementById("skills")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="navigationItem px-4"
+          >
             <a href="#Home">Skills</a>
           </li>
-          <li className="navigationItem px-4">
+          <li
+            onClick={() => {
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="navigationItem px-4"
+          >
             <a href="#Home">Projects</a>
           </li>
-          <li className="navigationItem px-4">
+          <li
+            onClick={() => {
+              document
+                .getElementById("contactme")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="navigationItem px-4"
+          >
             <a href="#Home">Contact</a>
           </li>
         </ul>

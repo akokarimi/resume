@@ -9,6 +9,7 @@ const Hero = () => {
     <>
       <section
         ref={ref}
+        id="home"
         className="bg-light1 h-screen transition duration-1000 dark:bg-dark overflow-x-hidden"
       >
         <Header />
@@ -28,6 +29,11 @@ const Hero = () => {
               Iran.
             </p>
             <a
+              onClick={() => {
+                document
+                  .getElementById("contactme")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
               href="#contact"
               className="text-sm md:text-md text-dark1 bg-white border-2 border-primary w-36 md:w-40 py-2 px-6 md:px-8 text-center shadow-md rounded-3xl hover:bg-primary hover:text-white hover:border-primary transition duration-500 dark:bg-dark1 dark:text-light1 dark:hover:bg-primary "
             >
@@ -45,7 +51,14 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="icon-scroll absolute bottom-0 right-1/2 w-6 md:w-7 h-10 md:h-12"></div>
+        <div
+          onClick={() => {
+            document
+              .getElementById("about")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="icon-scroll absolute bottom-0 right-1/2 w-6 md:w-7 h-10 md:h-12"
+        ></div>
       </section>
     </>
   );

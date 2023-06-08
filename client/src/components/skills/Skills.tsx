@@ -4,7 +4,7 @@ import React from "react";
 const Skills = () => {
   const [ref, inView] = useInView();
   return (
-    <section className="bg-light1 dark:bg-dark">
+    <section id="skills" className="bg-light1 dark:bg-dark">
       <div
         ref={ref}
         className="container mx-auto pt-20 pb-16 md:pt-24 md:pb-14 gap-2 "

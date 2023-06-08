@@ -17,7 +17,7 @@ function App() {
     setTimeout(() => {
       setLoading(false);
       loadingDiv?.remove();
-    }, 5000);
+    }, 3000);
   }, []);
 
   let [darkMode, setDarkMode] = useState(false);

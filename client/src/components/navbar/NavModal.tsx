@@ -40,28 +40,68 @@ const NavModal = () => {
             </div>
           </div>
 
-          <li className="navigationItem px-4 text-dark1 hover:underline hover:decoration-primary decoration-2 hover:underline-offset-4 transition duration-500">
+          <li
+            onClick={() => {
+              document
+                .getElementById("home")
+                ?.scrollIntoView({ behavior: "smooth" });
+              setModal(false);
+            }}
+            className="navigationItem px-4 text-dark1 hover:underline hover:decoration-primary decoration-2 hover:underline-offset-4 transition duration-500"
+          >
             <a href="#Home" className="dark:text-light1">
               Home
             </a>
           </li>
-          <li className="navigationItem px-4 text-dark1 hover:underline hover:decoration-primary decoration-2 hover:underline-offset-4 transition duration-500">
+          <li
+            onClick={() => {
+              document
+                .getElementById("about")
+                ?.scrollIntoView({ behavior: "smooth" });
+              setModal(false);
+            }}
+            className="navigationItem px-4 text-dark1 hover:underline hover:decoration-primary decoration-2 hover:underline-offset-4 transition duration-500"
+          >
             <a href="#Home" className="dark:text-light1">
               About Me
             </a>
           </li>
 
-          <li className="navigationItem px-4 text-dark1 hover:underline hover:decoration-primary decoration-2 hover:underline-offset-4 transition duration-500">
+          <li
+            onClick={() => {
+              document
+                .getElementById("skills")
+                ?.scrollIntoView({ behavior: "smooth" });
+              setModal(false);
+            }}
+            className="navigationItem px-4 text-dark1 hover:underline hover:decoration-primary decoration-2 hover:underline-offset-4 transition duration-500"
+          >
             <a href="#Home" className="dark:text-light1">
               My Skills
             </a>
           </li>
-          <li className="navigationItem px-4 text-dark1 hover:underline hover:decoration-primary decoration-2 hover:underline-offset-4 transition duration-500">
+          <li
+            onClick={() => {
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" });
+              setModal(false);
+            }}
+            className="navigationItem px-4 text-dark1 hover:underline hover:decoration-primary decoration-2 hover:underline-offset-4 transition duration-500"
+          >
             <a href="#Home" className="dark:text-light1">
               My Projects
             </a>
           </li>
-          <li className="navigationItem px-4 text-dark1 hover:underline hover:decoration-primary decoration-2 hover:underline-offset-4 transition duration-500">
+          <li
+            onClick={() => {
+              document
+                .getElementById("contactme")
+                ?.scrollIntoView({ behavior: "smooth" });
+              setModal(false);
+            }}
+            className="navigationItem px-4 text-dark1 hover:underline hover:decoration-primary decoration-2 hover:underline-offset-4 transition duration-500"
+          >
             <a href="#Home" className="dark:text-light1">
               Contact Me
             </a>
