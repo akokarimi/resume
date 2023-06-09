@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 const ContactMe = () => {
   const [ref, inView] = useInView();
   return (
-    <section id="contactme" className="bg-light1 dark:bg-dark h-[100vh]">
+    <section id="contactme" className="bg-light1 dark:bg-dark min-h-[100vh]">
       <div className="container mx-auto pt-20 pb-16 md:pt-24 md:pb-14 gap-2 ">
         <p
           ref={ref}

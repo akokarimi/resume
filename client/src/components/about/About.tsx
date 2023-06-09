@@ -5,7 +5,7 @@ const About = () => {
   const [ref2, inView2] = useInView();
 
   return (
-    <section className="bg-light2 dark:bg-dark1 overflow-x-hidden h-[100vh]">
+    <section className="bg-light2 dark:bg-dark1 overflow-x-hidden min-h-[100vh]">
       <div
         id="about"
         className="container mx-auto pt-20 pb-16 md:pt-24 md:pb-20 gap-2 
