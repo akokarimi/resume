@@ -16,11 +16,11 @@ const Hero = () => {
 
         <div className="flex flex-col-reverse md:flex-row justify-between items-center container mx-auto pt-8 gap-2">
           <div
-            className={`text-center md:text-left md:w-1/2 flex items-center md:items-start flex-col gap-8 transition-all duration-1000 ${
+            className={`text-center md:text-left md:w-1/2 flex items-center md:items-start flex-col gap-6 transition-all duration-1000 ${
               inView ? "translate-x-0" : "-translate-x-full"
             }`}
           >
-            <p className="text-2xl md:text-4xl lg:text-5xl text-dark1 dark:text-light1 font-bold">
+            <p className="mt-8 text-2xl md:text-4xl lg:text-5xl text-dark1 dark:text-light1 font-bold">
               Hi, I'm Ako Karimi
             </p>
 
