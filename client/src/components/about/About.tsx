@@ -5,7 +5,7 @@ const About = () => {
   const [ref2, inView2] = useInView();
 
   return (
-    <section className="bg-light2 dark:bg-dark1 overflow-x-hidden">
+    <section className="bg-light2 dark:bg-dark1 overflow-x-hidden h-[100vh]">
       <div
         id="about"
         className="container mx-auto pt-20 pb-16 md:pt-24 md:pb-20 gap-2 
@@ -73,7 +73,7 @@ const About = () => {
               </svg>
               Phone:
             </p>
-            <p className="text-dark2 dark:text-light2">+989189981472</p>
+            <p className="text-dark2 dark:text-light2">+98*******2</p>
             <p className="font-bold flex gap-1 items-center">
               <svg className="w-6 h-4 md:w-6 fill-primary">
                 <use xlinkHref="img/svg-icons.svg#icon-home"></use>

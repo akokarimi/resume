@@ -4,10 +4,10 @@ import React from "react";
 const Skills = () => {
   const [ref, inView] = useInView();
   return (
-    <section id="skills" className="bg-light1 dark:bg-dark">
+    <section id="skills" className="bg-light1 dark:bg-dark h-[100vh]">
       <div className="container mx-auto pt-20 pb-16 md:pt-24 md:pb-14 gap-2 ">
         <p className="text-xl md:text-4xl lg:text-5xl text-dark1 dark:text-light1 font-bold pb-12">
-          My Skils
+          My Skills...
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8 justify-between">
           <div className="flex flex-row items-center gap-2">
