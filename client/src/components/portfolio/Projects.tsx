@@ -15,7 +15,7 @@ function Projects() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-16 text-sm md:text-md">
           <div
             ref={ref1}
-            className={`grid grid-rows-[96px_1fr] gap-5 w-72 h-[610px] justify-items-center border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark hover:scale-[1.025]
+            className={`grid grid-rows-[96px_1fr] gap-5 w-56 xs:w-72 h-[610px] justify-items-center border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark hover:scale-[1.025]
             transition-all duration-1000 ${inView1 ? "opacity-1" : "opacity-0"}
           `}
           >
@@ -61,7 +61,7 @@ function Projects() {
           </div>
           <div
             ref={ref2}
-            className={`grid grid-rows-[96px_1fr] gap-0 w-72 h-[610px] justify-items-center border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark hover:scale-[1.025] transition-all duration-1000 ${
+            className={`grid grid-rows-[96px_1fr] gap-0 w-56 xs:w-72 h-[610px] justify-items-center border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark hover:scale-[1.025] transition-all duration-1000 ${
               inView2 ? "opacity-1" : "opacity-0"
             }
           `}

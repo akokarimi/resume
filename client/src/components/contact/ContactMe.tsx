@@ -3,7 +3,10 @@ import { useInView } from "react-intersection-observer";
 const ContactMe = () => {
   const [ref, inView] = useInView();
   return (
-    <section id="contactme" className="bg-light1 dark:bg-dark min-h-[100vh]">
+    <section
+      id="contactme"
+      className="bg-light1 dark:bg-dark min-h-[100vh] overflow-x-hidden"
+    >
       <div className="container mx-auto pt-20 pb-16 md:pt-24 md:pb-14 gap-2 ">
         <p
           ref={ref}
@@ -12,8 +15,9 @@ const ContactMe = () => {
           Contact Me...
         </p>
         <div
-          className={`text-sm md:text-md text-dark1 dark:text-light1 grid grid-cols-[1fr_2fr] gap-4 justify-start border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark1 transition-all duration-1000 ${
-            inView ? "translate-y-0" : "translate-y-full"
+          ref={ref}
+          className={`text-sm md:text-md text-dark1 dark:text-light1 grid grid-cols-1 xs:grid-cols-[1fr_2fr] gap-4 justify-start border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark1 transition-all duration-1000 ${
+            inView ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <p className="font-bold flex gap-1 items-center">

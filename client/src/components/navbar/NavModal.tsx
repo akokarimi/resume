@@ -14,7 +14,7 @@ const NavModal = () => {
         ${modal ? "" : "hidden"}`}
       ></div>
       <div
-        className={`fixed py-4 bg-light1 dark:bg-dark1 h-screen w-[50vw] left-0 top-0 transition duration-500 shadow-2xl z-20
+        className={`fixed py-4 bg-light1 dark:bg-dark1 h-screen w-[80vw] sm:w-[50vw] left-0 top-0 transition duration-500 shadow-2xl z-20
         ${modal ? "translate-x-0 opacity-1" : "-translate-x-full opacity-40"}`}
       >
         <ul className="relative border border-gray-200 text-left flex flex-col gap-5  py-4 m-4 rounded-2xl shadow-lg bg-white dark:bg-dark1 text-xs">

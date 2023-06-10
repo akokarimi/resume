@@ -22,7 +22,7 @@ const About = () => {
         <div className="flex flex-col md:grid md:grid-cols-[3fr_1px_2fr] gap-8 w-full ">
           <div className="">
             <p
-              className={`text-sm md:text-md text-dark2 dark:text-light2 transition-all duration-1000 ${
+              className={`text-xs md:text-md text-dark2 dark:text-light2 transition-all duration-1000 ${
                 inView ? "opacity-1" : "opacity-0"
               } `}
             >
@@ -41,7 +41,7 @@ const About = () => {
 
           <div
             ref={ref2}
-            className={`text-sm md:text-md text-dark1 dark:text-light1 grid grid-cols-[1fr_2fr] gap-4 justify-start border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark transition-all duration-1000 ${
+            className={`text-xs xs:text-sm md:text-md text-dark1 dark:text-light1 grid grid-cols-[1fr_2fr] gap-4 justify-start border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark transition-all duration-1000 ${
               inView2 ? "opacity-1 translate-x-0" : "translate-x-full opacity-0"
             }`}
           >
@@ -80,7 +80,9 @@ const About = () => {
               </svg>
               Email:
             </p>
-            <p className="text-dark2 dark:text-light2">ako.karimii@gmail.com</p>
+            <p className="text-dark2 dark:text-light2 col-span-2 xs:col-span-1 justify-self-center xs:justify-self-auto">
+              ako.karimii@gmail.com
+            </p>
           </div>
         </div>
       </div>
