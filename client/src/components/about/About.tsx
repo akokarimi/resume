@@ -5,7 +5,7 @@ const About = () => {
   const [ref2, inView2] = useInView();
 
   return (
-    <section className="bg-light2 dark:bg-dark1 overflow-x-hidden min-h-[100vh]">
+    <section className="bg-light2 dark:bg-dark1 overflow-x-hidden min-h-[100vh] md:min-h-[auto]">
       <div
         id="about"
         className="container mx-auto pt-20 pb-16 md:pt-24 md:pb-20 gap-2 
@@ -22,7 +22,7 @@ const About = () => {
         <div className="flex flex-col md:grid md:grid-cols-[3fr_1px_2fr] gap-8 w-full ">
           <div className="">
             <p
-              className={`text-xs md:text-md text-dark2 dark:text-light2 transition-all duration-1000 ${
+              className={`text-xs xs:text-sm text-dark2 dark:text-light2 transition-all duration-1000 ${
                 inView ? "opacity-1" : "opacity-0"
               } `}
             >
