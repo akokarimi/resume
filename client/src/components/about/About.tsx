@@ -26,15 +26,16 @@ const About = () => {
                 inView ? "opacity-1" : "opacity-0"
               } `}
             >
-              My name is Ako Karimi. I am a junior full stack web developer with
+              My name is Ako Karimi. I am a junior front-end web developer with
               over 1 year of exprience. I have a strong foundation in HTML, CSS,
-              JavaScript, and various front-end frameworks such as React,
+              JavaScript, and various front-end frameworks such as React and
               Tailwind CSS. Additionally, I have experience working with
               back-end technologies such as Node.js, Express.js, and MongoDB.
               <br />
-              <br />I enjoy exploring new technologies, attending tech meetups,
-              and contributing to open-source projects. I am a team player who
-              enjoys collaborating with others to achieve common goals.
+              <br />I enjoy working on big projects, trying new technologies and
+              platforms, and contributing to open-source projects. I am a team
+              player who enjoys collaborating with others to achieve common
+              goals.
             </p>
           </div>
           <div className="bg-dark1 dark:bg-light1"></div>

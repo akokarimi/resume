@@ -25,7 +25,7 @@ const Hero = () => {
             </p>
 
             <p className="text-xs xs:text-sm md:text-2xl text-dark2 dark:text-light2">
-              I'm an Enthusiastic Full Stack Web Developer, Based in Sanandaj,
+              I'm an Enthusiastic Front-End Web Developer, Based in Sanandaj,
               Iran.
             </p>
             <a
