@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 function Projects() {
   const [ref1, inView1] = useInView();
   const [ref2, inView2] = useInView();
+  const [ref3, inView3] = useInView();
   return (
     <section
       id="projects"
@@ -15,10 +16,14 @@ function Projects() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-16 text-sm md:text-md">
           <div
             ref={ref1}
-            className={`grid grid-rows-[96px_1fr] gap-5 w-56 xs:w-72 h-[610px] justify-items-center border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark hover:scale-[1.025]
+            className={`relative overflow-hidden grid grid-rows-[96px_1fr] gap-5 w-56 xs:w-72 h-[610px] justify-items-center border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark hover:scale-[1.025]
             transition-all duration-1000 ${inView1 ? "opacity-1" : "opacity-0"}
           `}
           >
+            <div className="absolute -left-10 top-8 w-44 bg-primary h-7 overflow-hidden -rotate-45 text-white text-center text-xs pt-1">
+              {" "}
+              under developemnt
+            </div>
             <img
               src="/img/haylo.png"
               className="max-w-[8rem] max-h-[8rem] dark:invert"
@@ -61,9 +66,9 @@ function Projects() {
             </a>
           </div>
           <div
-            ref={ref1}
+            ref={ref2}
             className={`grid grid-rows-[96px_1fr] gap-5 w-56 xs:w-72 h-[610px] justify-items-center border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark hover:scale-[1.025]
-            transition-all duration-1000 ${inView1 ? "opacity-1" : "opacity-0"}
+            transition-all duration-1000 ${inView2 ? "opacity-1" : "opacity-0"}
           `}
           >
             <svg className="w-48">
@@ -107,9 +112,9 @@ function Projects() {
             </a>
           </div>
           <div
-            ref={ref2}
+            ref={ref3}
             className={`grid grid-rows-[96px_1fr] gap-0 w-56 xs:w-72 h-[610px] justify-items-center border border-gray-200 dark:border-none rounded-2xl shadow-2xl p-4 bg-white dark:bg-dark hover:scale-[1.025] transition-all duration-1000 ${
-              inView2 ? "opacity-1" : "opacity-0"
+              inView3 ? "opacity-1" : "opacity-0"
             }
           `}
           >

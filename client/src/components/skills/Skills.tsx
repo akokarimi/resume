@@ -124,6 +124,32 @@ const Skills = () => {
               }`}
             ></div>
           </div>
+          <div className=" flex flex-row items-center gap-2">
+            <div>
+              <svg className="h-8 w-8 dark:invert text-center">
+                <use xlinkHref="img/svg-icons.svg#nextjs"></use>
+              </svg>
+            </div>
+            <div
+              className={`text-sm text-dark1 my-2 before:indent-1 w-full outline-1 outline-gray-400 bg-gray-100 rounded-lg outline
+              before:w-[60%] before:inline-block before:content-['60%'] before:bg-primary before:h-full before:rounded-lg before:text-white before:text-right before:pr-1 ${
+                inView ? "before:animate-[fill_2s_0s]" : "before:animate-none"
+              }`}
+            ></div>
+          </div>
+          <div className=" flex flex-row items-center gap-2">
+            <div>
+              <svg className="h-8 w-8 text-center ">
+                <use xlinkHref="img/svg-icons.svg#typescript"></use>
+              </svg>
+            </div>
+            <div
+              className={`text-sm text-dark1 my-2 before:indent-1 w-full outline-1 outline-gray-400 bg-gray-100 rounded-lg outline
+              before:w-[50%] before:inline-block before:content-['50%'] before:bg-primary before:h-full before:rounded-lg before:text-white before:text-right before:pr-1 ${
+                inView ? "before:animate-[fill_2s_0s]" : "before:animate-none"
+              }`}
+            ></div>
+          </div>
         </div>
       </div>
     </section>
