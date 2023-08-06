@@ -27,18 +27,5 @@
   margin-left: -2.5px;
   top: 8px;
   border-radius: 4px;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-name: scroll;
   background-color: #292929;
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
 }
