@@ -22,7 +22,7 @@ function Projects() {
           >
             <div className="absolute -left-10 top-8 w-44 bg-primary h-7 overflow-hidden -rotate-45 text-white text-center text-xs pt-1">
               {" "}
-              under developemnt
+              Old Version
             </div>
             <img
               src="/img/haylo.png"
@@ -57,7 +57,7 @@ function Projects() {
               </div>
             </div>
             <a
-              href="https://haylo.vercel.app"
+              href="https://haylo-old.vercel.app"
               target="_blank"
               rel="noreferrer"
               className="my-8 text-dark1 dark:text-light1 border-2 border-primary w-36 md:w-40 py-2 px-6 md:px-8 text-center shadow-md rounded-3xl hover:bg-primary hover:text-white hover:border-primary transition duration-500"
