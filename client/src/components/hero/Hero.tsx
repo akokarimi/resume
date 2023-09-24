@@ -41,12 +41,12 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="w-4/5 md:w-1/2 flex justify-center">
+          <div className="w-full md:w-3/4 flex justify-center">
             <img
               className={`mt-0 xs:mt-6 md:mt-auto object-scale-down transition-all duration-1000 ${
                 inView ? "translate-x-0" : "translate-x-full"
               }`}
-              src="/img/1.png"
+              src="/img/8.png"
               alt="Ako Karimi"
             />
           </div>
@@ -57,7 +57,7 @@ const Hero = () => {
               .getElementById("about")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
-          className="icon-scroll absolute bottom-0 right-1/2 w-6 md:w-7 h-10 md:h-12"
+          className="icon-scroll absolute bottom-0 right-1/2 -translate-x-[50%] w-6 md:w-7 h-10 md:h-12"
         ></div>
       </section>
     </>
